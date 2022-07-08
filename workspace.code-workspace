@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Apa-Aja.Bot",
+			"path": "..\\bot-nodejs-v2.0\\Apa-Aja.Bot"
+		}
+	],
+	"settings": {}
+}

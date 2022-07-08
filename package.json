@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "discord-api-types": "^0.36.1",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "glob": "^8.0.3",
+    "got-scraping": "^3.2.9",
+    "mongoose": "^6.4.3",
+    "request": "^2.88.2",
+    "wokcommands": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "name": "nodejs",
+  "version": "^16.14.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm outdated && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

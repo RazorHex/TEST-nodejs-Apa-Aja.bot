@@ -1,0 +1,26 @@
+{
+    "clientId": "942788321120235570",
+    "ROLES": [
+        {
+            "id": "852363041696907295",
+            "roles": {
+                "name": {
+                    "guild": "852363041696907295",
+                    "icon": null,
+                    "unicodeEmoji": null,
+                    "id": "852368444744925224",
+                    "name": "r6",
+                    "color": 10038562,
+                    "hoist": false,
+                    "rawPosition": 8,
+                    "permissions": "0",
+                    "managed": false,
+                    "mentionable": false,
+                    "tags": null,
+                    "createdTimestamp": 1623290873467
+                },
+                "desc": null
+            }
+        }
+    ]
+}
