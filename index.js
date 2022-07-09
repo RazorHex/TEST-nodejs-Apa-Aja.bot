@@ -1,13 +1,23 @@
+/**
+ * !!! DON'T FORGOT TO CREATE .env FILE !!!
+ *  Inside .env file:
+ *      - token for bot
+ *      - url for mongodb
+ * 
+ * Docs:
+ *  WOKCommands:    https://docs.wornoffkeys.com/
+ *  Discord.js:     https://discord.js.org/#/
+ *  mongoose:       https://mongoosejs.com/docs/guide.html
+ */
+
 const {Client, Collection, MessageEmbed, Interaction} = require('discord.js')
 const WOK = require('wokcommands')
 const mongoose = require('mongoose')
 const path = require('path')
-const { Tunnel } = require('request/lib/tunnel')
 require("dotenv").config()
-//const roleSchema = require('./role_schema')
 
 const client = new Client({intents: 14023})
-const owner = process.env.OWNER
+// const owner = process.env.OWNER
 
 client.on('ready', async () => {
     client.user.setPresence({ activities: [{ name: '(/) slash commands' }], status: 'idle' });
@@ -24,7 +34,15 @@ client.on('ready', async () => {
     new WOK(client, {
         commandsDir: path.join(__dirname, 'src/commands'),
         testServers: ['852363041696907295', '948855234749431838'],
-        botOwners: ['427061541012111362']
+        botOwners: ['427061541012111362'],
+        disabledDefaultCommands: [
+            'help',
+            'command',
+            'language',
+            'prefix',
+            'requiredrole',
+            'channelonly'
+        ]
     })
         .setDisplayName(client.user.username)
 })
