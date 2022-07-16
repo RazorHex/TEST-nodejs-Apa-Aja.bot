@@ -1,4 +1,4 @@
-<h1 allign="center">Apa-Aja.bot test source code</h1>
+<h1 align="center">Apa-Aja.bot test source code</h1>
 Its just a simple bot to use on one server only.
 
 ## Documents
