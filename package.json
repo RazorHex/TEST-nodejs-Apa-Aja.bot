@@ -9,7 +9,7 @@
     "dotenv": "^16.0.1",
     "glob": "^8.0.3",
     "got-scraping": "^3.2.9",
-    "mongoose": "^6.4.3",
+    "mongoose": "^6.4.4",
     "request": "^2.88.2",
     "wokcommands": "^1.5.3"
   },
