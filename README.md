@@ -7,4 +7,5 @@ Its just a simple bot to use on one server only.
  - [Mongoose](https://mongoosejs.com/docs/guide.html)
  - [MongoDB](https://www.mongodb.com/)
 
-**Test**
+## reminder
+Create new file .env to store your discord bot token and mongodb URL, open index.js file for more
