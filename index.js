@@ -1,13 +1,5 @@
 /**
  * !!! DON'T FORGOT TO CREATE .env FILE !!!
- *  Inside .env file:
- *      - token for bot
- *      - url for mongodb
- * 
- * Docs:
- *  WOKCommands:    https://docs.wornoffkeys.com/
- *  Discord.js:     https://discord.js.org/#/
- *  mongoose:       https://mongoosejs.com/docs/guide.html
  */
 
 const {Client, Collection, MessageEmbed, Interaction} = require('discord.js')
