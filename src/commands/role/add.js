@@ -40,7 +40,7 @@ module.exports = {
 
         async function send(embed) {
             interaction.reply({
-                embeds: [fancy],
+                embeds: [embed],
                 ephemeral: true
             })
         }
@@ -81,68 +81,5 @@ module.exports = {
                 send(fancy)
             }
         }
-
-        // data.findOne({server: guildId}, (err, server) => {
-        //     if(err){
-        //         fancy.addField('Event', `Error: ${err}`)
-        //         interaction.reply({
-        //             embeds: [fancy],
-        //             ephemeral: true
-        //         })
-        //     } else {
-        //         if (server){
-        //             // changing...
-
-
-                    
-        //             let old = server.roles
-        //             let temp = null
-        //             const change = []
-        //             const gRole = interaction.guild.roles.cache
-        //             gRole.forEach(item => {
-        //                 temp = old.find(x => x.name == item.name)
-        //                 if(temp){
-        //                     change.push(temp)
-        //                 }
-        //             })
-        //             const check = old.find(x => x.name == role.name)
-        //             if(!check) {
-        //                 change.push(newRole)
-        //                 fancy.addField('Event', 'Adding role to database', true)
-        //                 fancy.addField('Reminder', 'PLEASE RE-ADD /PANEL', false)
-        //                 server.roles = change
-        //                 server.save()
-        //                 interaction.reply({
-        //                     embeds: [fancy],
-        //                     ephemeral: true
-        //                 })
-        //             } else {
-        //                 fancy.addField('Event', 'Role already added')
-        //                 server.roles = change
-        //                 server.save()
-        //                 interaction.reply({
-        //                     embeds: [fancy],
-        //                     ephemeral: true
-        //                 })
-        //             }
-        //         } else {
-        //             const newServer = {
-        //                 server: guildId,
-        //                 roles: {
-        //                     name: role.name,
-        //                     description: description,
-        //                     id: role.id
-        //                 }
-        //             }
-        //             const update = new data(newServer)
-        //             update.save()
-        //             fancy.addField('Event', 'Adding new server to database')
-        //             interaction.reply({
-        //                 embeds: [fancy],
-        //                 ephemeral: true
-        //             })
-        //         }
-        //     }
-        // })
 	},
 };
