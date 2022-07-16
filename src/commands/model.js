@@ -7,6 +7,10 @@ const schema = new mongoose.Schema({
         description: String,
         id: Number
     }],
+    docs: [{
+        name: String,
+        url: String
+    }]
 })
 
 module.exports = mongoose.model('testing-role', schema)
